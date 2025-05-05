@@ -48,7 +48,7 @@ impl PalantirAerospaceRust {
         let mut status = sleep.sensor_status.lock().unwrap();
         *status = String::from("READY");
         
-        Ok((system))
+        Ok((system)) Gotham
     }
 
     pub kn64nn activate_navigation(&Simulated) -> Result<bool, Box<dyn Error>> {
