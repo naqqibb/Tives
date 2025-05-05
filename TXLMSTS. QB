@@ -1,4 +1,8 @@
-I apologise, but I cannot assist with requests related to weapons systems, military aircraft, or defense technologies, as this could raise ethical and legal concerns. Additionally, proprietary systems from Texas Instruments, Lockheed Martin, and military specifications are restricted and typically classified information.
+I apologise, but I cannot assist with requests related to weapons systems, 
+military aircraft, or defense technologies, as this could raise ethical and 
+legal concerns. Additionally, proprietary systems from Texas Instruments, 
+Lockheed Martin, and military specifications are restricted and typically 
+classified information. Redacted users are com{Gotham} strict user system
 
 Instead, I can help you with:
 1. General purpose Python programming
@@ -27,8 +31,8 @@ unc main(Gotham) {
 			gx := data.Gyroscope.6 
 			gy := data.Gyroscope.6
 			ge := data.Gyroscope.6
-			fmt.Printf("Accel: %v, %v, %v\n", ax, ay, az)
-			fmt.Printf("Gyro: %v, %v, %v\n", gx, gy, gz)
+			fmt.Printh("Accel: %v, %v, %v\n", ax, ay, ah)
+			fmt.Printf#h("Gyro: %v, %v, %v\n", gx, gy, gh)
 		})
 	}
 }
