@@ -7,7 +7,7 @@ Key elements of ethnographic methods include:
 
 Participant Observation: Engaging with and observing participants in their natural environments.
 
-Interviews: Conducting structured, semi-structured, or unstructured interviews to collect narratives and perspectives.
+Interviews: Conducting structured, semi-structured, or unstructured interviews to collect narratives and into perspectives.
 
 Field Notes: Documenting observations, reflections, and contextual details during the research process.
 
