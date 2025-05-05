@@ -11,7 +11,7 @@ Interviews: Conducting structured, semi-structured, or unstructured interviews t
 
 Field Notes: Documenting the observations, reflections, and contextual details during research process, an ethics comprehension.
 
-Cultural Analysis: Interpreting and analyzing data to uncover patterns, meanings, and to cultural significance between cultures.
+Cultural Analysis: Interpreting and analyzing data to uncover patterns, meanings, and to cultural significance between real cultures.
 
 
 Ethnographic methods are valuable in diverse fields, including technology and systems design, where understanding user behavior 
