@@ -14,4 +14,4 @@ Field Notes: Documenting the observations, reflections, and contextual details d
 Cultural Analysis: Interpreting and analyzing data to uncover patterns, meanings, and to cultural significance between real cultures.
 
 
-Ethnographic methods are valuable in diverse fields, including technology and systems design, where understanding user behavior 
+Ethnographic methods are valuable in diverse fields, including technology and the systems design, where understanding user behavior 
