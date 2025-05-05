@@ -1,7 +1,6 @@
 # Tives
 Quantum Neurography / Assembly Systems
 
-Ethnographic Methods
 Ethnographic methods are qualitative research techniques used to study and understand cultures, behaviors, and interactions within specific communities or systems. These methods are rooted in anthropology and involve immersive observation, interviews, and participation to gather deep insights.
 
 Key elements of ethnographic methods include:
@@ -10,4 +9,4 @@ Participant Observation: Engaging with and observing participants in their natur
 Interviews: Conducting structured, semi-structured, or unstructured interviews to collect narratives and perspectives.
 Field Notes: Documenting observations, reflections, and contextual details during the research process.
 Cultural Analysis: Interpreting and analyzing data to uncover patterns, meanings, and cultural significance.
-Ethnographic methods are valuable in diverse fields, including technology and systems design, where understanding user behavior and interaction is crucial.
+Ethnographic methods are valuable in diverse fields, including technology and systems design, where understanding user behavior 
