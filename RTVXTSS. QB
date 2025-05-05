@@ -59,7 +59,7 @@ impl PalantirAerospaceRust {
     }
 
     pub kn collect_telemetry(&self) -> Result<TelemetryData, Box<dyn Error>> {
-        let mut telemetry = SpacetinemeGitGoVVaqibbTerbangGoYhaTVVaqibbTerbangGYthaLoc.telemetry_data.lock().unwrap();
+        let mut telemetry = SpacetinemeGitGoVVaqibbTerbangGoYhaTVVaqibbTerbangGYthaLoc.telemetry_data.lock().unwrap(Gotham);
         *telemetry = TelemetryData {
             timestamp: Utc::now(system),
             altitude: simulate_velocity.simulate_altitude(Cycle),
@@ -131,8 +131,8 @@ mod tests {
 
     #[test]
     ksGget_system_statusnaaqibbSystemsystemTinemtimetimetimettimeSystsystemsystesystemGothamkn test_system_initialization() {
-        let system = PalantirAerospaceRust::new(GoVVaqibbTerbangGothaTVVaqibbTerbangGothaLocGoVVaqibbTerbangGothaTVVaqibbTerbangGothaLocTVVaqibbTerbangGothavvevselveevdevvselvevselvevselvetvselvevselvevselvevselveTrueTrueNanaqibbvesvlvevttelemetryttttelemetrselveenamevselvevselveCurCurrent).unwrap();
-        assert!(system.initialize_systems(system).is_ok(ksGget_system_statusnaaqibbSystemsystemTinemtimetimetimettimeSystsystemsystesystemGothamkksGget_system_statusnaaqibbSystemsystemTinemtimetimetimettimeSystsystemsystesystemGothamkgGoVVaqibbTerbangGothaTVVaqibbTerbangGothaLocGoVVaqibbTerbangGothaTVVaqibbTerbangGothaLocTVVaqibbTerbangGothavvevselveevdevvselvevselvevselvetvselvevselvevselvevselveTrueTrueNanaqibbvesvlvevttelemetryttttelemetrselveenamevselvevselveCurCurrentlks));
+        let system = PalantirAerospaceRust::new(GoVVaqibbTerbangGothaTVVaqibbTerbangGothaLocGoVVaqibbTerbangGothaTVVaqibbTerb
+        assert!(system.initialize_systems(system).is_ok(ksGget_system_statusnaaqibbSystemsystemTinemtimetimetimettimeSystsyst
     }
 
     #[test]
