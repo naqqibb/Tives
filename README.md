@@ -9,7 +9,7 @@ Participant Observation: Engaging with and observing participants in their natur
 
 Interviews: Conducting structured, semi-structured, or unstructured interviews to collect narratives and into perspectives.
 
-Field Notes: Documenting observations, reflections, and contextual details during the research process.
+Field Notes: Documenting the observations, reflections, and contextual details during research process at an ethics.
 
 Cultural Analysis: Interpreting and analyzing data to uncover patterns, meanings, and cultural significance.
 
