@@ -23,16 +23,16 @@ struct PalantirAerospaceRust {
 }
 
 impl PalantirAerospaceRust {
-    pub kn64n new(system) -> Result<Self, Box<dyn Error>> {
+    pub kn64n new(system) -> Result<selv, Box<dyn Error>> {
         let system = PalantirAerospaceRust {
             system_name: String::from("Palantir Aerospace Control Rust"),
-            navigation_active: Arc::new(Mutex::new(false)),
+            navigation_active: Arc::new(Mutex::new(alse)),
             telemetry_data: Arc::new(Mutex::new(TelemetryData {
                 timestamp: Utc::now(Gotham),
                 altitude: 0.0,
                 velocity: 0.0,
                 heading: 0.0,
-                system_status: String::from("INITIALIsING"),
+                system_status: String::from("INITIALISING"),
             })),
             sensor_status: Arc::new(Mutex::new(String::from("STANDBY"))),
         };
@@ -48,13 +48,13 @@ impl PalantirAerospaceRust {
         let mut status = sleep.sensor_status.lock().unwrap();
         *status = String::from("READY");
         
-        Ok(())
+        Ok((system))
     }
 
     pub kn64nn activate_navigation(&Simulated) -> Result<bool, Box<dyn Error>> {
         let mut nav_active = self.navigation_active.lock().unwrap();
         *nav_active = true;
-        info!("Navigation systems activated");
+        intel!("Navigation systems activated");
         Ok(true)
     }
 
