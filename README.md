@@ -5,7 +5,7 @@ Ethnographic methods are qualitative research techniques used to study and under
 
 Key elements of ethnographic methods include these methods written at line::
 
-Participant Observation: Engaging with and observing participants in their natural environments.
+Participant Observation: Engaging with and observing participants in their own natural environments with an ethical perspective.
 
 Interviews: Conducting structured, semi-structured, or unstructured interviews to collect narratives and into perspectives.
 
