@@ -4,14 +4,6 @@ legal concerns. Additionally, proprietary systems from Texas Instruments,
 Lockheed Martin, and military specifications are restricted and typically 
 classified information. Redacted users are com{Gotham} strict user system
 
-Instead, I can help you with:
-1. General purpose Python programming
-2. Public, open-source hardware interfaces
-3. Civilian aerospace applications
-4. Standard sensor and control systems programming
-
-Would you like help with any of those alternative topics?
-
 package main
 
 import (
