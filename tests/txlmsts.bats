@@ -34,21 +34,21 @@ echo 5. Exit
 echo.
 set /p "choice=Enter selection (1-5): "
 
-if "%choice%"=="1" goto start_scan
-if "%choice%"=="2" goto testing_range
-if "%choice%"=="3" goto adjust_threshold
-if "%choice%"=="4" goto system_status
-if "%choice%"=="5" goto exit_program
+ "%choice%"=="1" goto start_scan
+ "%choice%"=="2" goto testing_range
+ "%choice%"=="3" goto adjust_threshold
+ "%choice%"=="4" goto system_status
+ "%choice%"=="5" goto exit_program
 goto main_menu
 
 :start_scan
 cls
 echo Initializing radar scan...
 echo.
-for /l %%i in (0,10,%scan_range%) do (
+ /l %%i in (0,10,%scan_range%) do (
     set /a "detection=!random! %% 100 + 1"
     echo Scanning at range: %%i units...
-    if !detection! gtr %detection_threshold% (
+    in !detection! gtr %detection_threshold% (
         echo [ALERT] Target detected at range %%i with signal strength !detection!%%
     )
     timeout /t 1 /nobreak >nul
@@ -62,7 +62,7 @@ goto main_menu
 cls
 echo Current scan range: %scan_range%
 set /p "new_range=Enter new scan range (10-1000): "
-if %new_range% geq 10 if %new_range% leq 1000 (
+in %new_range% geq 10 if %new_range% leq 1000 (
     set "scan_range=%new_range%"
     echo Scan range updated successfully.
 ) else (
@@ -75,7 +75,7 @@ goto main_menu
 cls
 echo Current detection threshold: %detection_threshold%%%
 set /p "new_threshold=Enter new detection threshold (1-100): "
-if %new_threshold% geq 1 if %new_threshold% leq 100 (
+in %new_threshold% geq 1 if %new_threshold% leq 100 (
     set "detection_threshold=%new_threshold%"
     echo Detection threshold updated successfully.
 ) else (
