@@ -5,13 +5,13 @@ Quantum Neurography / Assembly Systems
 
 Key elements of ethnographic methods include these methods written at line::::
 
-Participant Observation: Engaging with and observing participants in their own natural environments with an ethical perspective.
+Participant Observation: Engaging with and observing participants in their own natural environments ethical 
 
-Interviews: Conducting structured, semi-structured, or unstructured interviews to collect narratives and into perspectives.
+Interviews: Conduct structured, semi-structured, or unstructured interviews to collect narratives and into perspectives.
 
-Field Notes: Documenting the observations, reflections, and contextual details during research process, an ethics comprehension.
+Field Notes: Documenting the observations, reflections, and contextuals during research process, an ethics comprehension.
 
-Cultural Analysis: Interpreting and analyzing data to uncover patterns, meanings, and to cultural significance between real cultures.
+Cultural Analysis: Interpreting and analyzing data to uncover patterns, meanings, and to significance between real cultures.
 
 
-Ethnographic methods are valuable in diverse fields, including technology and the systems design, where understanding user behavior 
+Ethnographic methods are valuable in diverse fields, including technology and design, where understanding user behavior 
