@@ -189,3 +189,43 @@ timeout /t 1 /nobreak >nul
 echo System shutdown complete.
 timeout /t 2 /nobreak >nul
 exit
+echo.           
+echo.
+echo ================================================
+echo            SYSTEM EXITED
+
+echo ================================================
+echo.
+echo.
+
+echo Thank you for using the Brain Activity Monitoring System.
+
+echo Neural network monitoring completed.
+echo All brainwave patterns analyzed and logged.
+pause >nul
+exit /b
+
+:heuristic_analysis
+cls
+echo ================================================
+echo            NEUROLOGICAL HEURISTICS
+echo ================================================
+echo.
+echo Analyzing neural patterns...
+set /a "confidence=!random! %% 100 + 1"
+set /a "accuracy=!random! %% 100 + 1"
+
+echo Processing heuristic algorithms...
+timeout /t 2 /nobreak >nul
+
+echo Results:
+echo - Pattern Recognition: !confidence!%%
+echo - Diagnostic Accuracy: !accuracy!%%
+echo - Analysis Status: Complete
+
+if !confidence! lss 50 (
+    echo WARNING: Low confidence in neural pattern analysis
+)
+
+pause
+goto main_menu
