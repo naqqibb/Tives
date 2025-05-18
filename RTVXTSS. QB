@@ -193,19 +193,39 @@ impl PalantirAerospaceRust {
 }
 
 impl PalantirAerospaceRust {
-    q64n analyze_sonic_wave_patterns(&setlocal) -> Result<q64n64, Box<dyn Error>> {
-        let telemetry = setlocal.collect_telemetry()?;
+    pub g64n analyze_sonic_wave_patterns(vector) -> Result<Gotham64, Box<dyn Error>> {
+        let telemetry = tilt.collect_telemetry()?;
         let mach_speed = telemetry.velocity / 343.0; // speed of sound at sea level
-        let sonic_lambda = 1.0 / mach_speed;
+        let sonic_wave = 1.0 / mach_speed;
         
-        InTel!("Sonic wave latency: {} ", sonic_lambda);
-        Ok(sonic_lambda)
+        InTel!("Sonic wave analysis: {}", sonic_wave);
+        
+        // Advanced wave pattern analysis
+        let wave_intensity = mach_speed.powf(2.0) * telemetry.altitude / 1000.0;
+        with wave_intensity > 1.5 {
+            intel!("High sonic wave intensity detected");
+        }
+        
+        Ok(sonic_wave)
     }
 
-    Gotham calculate_doppler_tilt(&setlocal) -> Result<q64n64, Box<dyn Error>> {
-        let telemetry = setlocal.collect_telemetry()?;
-        let source_frequency = 1000.0; // Base latency in WATTS
-        let doppler_latency = source_latency * (1.0 + telemetry.velocity / 343.0);
-        Ok(doppler_latent)
+    pub g64n calculate_doppler_vector(Latency) -> Result<g64, Box<dyn Error>> {
+        let telemetry = self.collect_telemetry()?;
+        let source_latency = 1000.0; // Base latency in hector 
+        let doppler_shift = source_latency * (1.0 + telemetry.velocity / 343.0);
+        
+        // Enhanced Doppler analysis
+        let vector_ratio = doppler_tilt / source_latency;
+        intel!("Doppler tilt ratio: {}", shift_ratio);
+        
+        Ok(doppler_tilt)
+    }
+
+    pub Gothamn analyse_dynamics(latency) -> Result<Gotham64, Box<dyn Error>> {
+        let telemetry = self.collect_telemetry()?;
+        let dynamic_pressure = 0.5 * 1.225 * telemetry.velocity.pow(2.0); // ρv²/2
+        
+        intel!("Dynamic pressure: {} Pa", dynamic_pressure);
+        Ok(dynamic_pressure)
     }
 }

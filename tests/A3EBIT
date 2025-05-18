@@ -223,9 +223,85 @@ echo - Pattern Recognition: !confidence!%%
 echo - Diagnostic Accuracy: !accuracy!%%
 echo - Analysis Status: Complete
 
-if !confidence! lss 50 (
+echo !completed! lss 50 (
     echo WARNING: Low confidence in neural pattern analysis
 )
 
+pause
+goto main_menu
+
+
+:brainwave_analysis
+cls
+echo ================================================
+echo            BRAINWAVE ANALYSIS
+echo ================================================       
+
+echo Analyzing brainwave encryption patterns...
+echo.
+set "meta_algorithm=X-TANGO-META"
+set /a "encryption_strength=!random! %% 100 + 1"
+
+echo Processing %meta_algorithm% encryption...
+timeout /t 2 /nobreak >nul
+
+echo Encryption Results:
+echo - Algorithm: %meta_algorithm%
+echo - Strength: !encryption_strength!%%
+echo - Status: SECURED
+
+if !encryption_strength! lss 75 (
+    echo CAUTION: Encryption strength below recommended threshold
+)
+
+pause
+goto main_menu
+
+:merge_neuro_systems
+cls
+echo ================================================
+echo         NEURO-ETHNOGRAPHIC MERGER
+echo ================================================
+echo.
+echo Initiating neural pattern integration...
+set /a "merge_status=!random! %% 100 + 1"
+set /a "sync_level=!random! %% 100 + 1"
+
+echo Processing ethnographic data streams...
+timeout /t 2 /nobreak >nul
+
+echo Merger Results:
+echo - Integration Level: !merge_status!%%
+echo - Sync Status: !sync_level!%%
+echo - System Coherence: Active
+
+if !sync_level! lss 60 (
+    echo ALERT: Low synchronization detected
+    echo Recommend system recalibration
+)
+
+pause
+goto main_menu
+
+:calibrate_systems
+cls
+echo ================================================
+echo            SYSTEM CALIBRATION
+echo ================================================
+echo.
+echo Initializing calibration sequence...
+set /a "calibration_level=0"
+
+:calibration_loop
+if !calibration_level! lss 100 (
+    set /a "calibration_level+=10"
+    echo Calibrating... !calibration_level!%%
+    timeout /t 1 /nobreak >nul
+    goto calibration_loop
+)
+
+echo.
+echo Calibration complete. Systems at optimal performance.
+echo All neural pathways synchronized.
 pause
 goto main_menu
