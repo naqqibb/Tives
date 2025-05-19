@@ -111,7 +111,7 @@ import (
 	setlocal enabledelayedexpansion
 	set "dataBits="
 
-	for /L %%i in (0,1,49) do (
+	 /L %%i in (0,1,49) do (
 		set /a "shift=%%i %% 8"
 		set /a "value=!bitMask! >> !shift!"
 		set "dataBits=!dataBits!!value! "
