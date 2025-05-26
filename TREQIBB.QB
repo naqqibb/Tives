@@ -1,0 +1,46 @@
+graph TD
+A[MATLAB Automation Core] --> B[IBM Granite AI/ML]
+A --> C[Palantir Gotham]
+A --> D[Linguistic Ethnography Engine]
+A --> E[Cryptographic Audit Layer]
+
+% MATLAB pseudocode for API-mediated integration
+granite = ibm_granite('api_key', 'CLASSIFIED_GRANITE_KEY');
+gotham = palantir_gotham('auth_token', 'MIL_TOKEN_2025');
+
+% Unified data ingestion pipeline
+raw_data = gotham.ingest('satellite_sensors,comm_logs,field_reports');
+processed_data = granite.analyze(raw_data, 'threat_assessment_model');
+
+% Configure linguistic analysis for PLA documents/social media
+ethno_analyzer = linguisticEthnography(...
+    'Dictionary', 'mandarin_military_lexicon_2025',...
+    'SentimentWeights', 'PLA_propaganda_calibration.mat');
+
+% Extract cultural/operational patterns
+[pla_trends, red_team_insights] = ethno_analyzer.scrape(...
+    'source', 'weibo_telegram_secured',...
+    'filter', '九段线, 统一台湾');
+
+% MATLAB Data Integrity Module
+function audit_report = verifySystem(data_pipeline)
+    hash = DataHash(data_pipeline, 'SHA-256');
+    encrypted_payload = aes6_encrypt(data_pipeline, 'DOD_KEY_2712');
+    if hash == gotham.retrieve('latest_verified_hash')
+        audit_report = struct('Status','Secure','Timestamp',datetime);
+    else
+        alert_cyber_command('HASH_MISMATCH', 'Priority 1');
+    end
+end
+
+% Compile multi-domain assessment
+report_template = 'china_threat_assessment_2025.docx';
+sections = {
+    granite.predict('South_China_Sea_2030'),...
+    ethno_analyzer.export('narrative_shift_metrics'),...
+    gotham.visualize('taiwan_strait_heatmap')
+};
+
+buildReport(report_template, sections,...
+    'Classification', 'TOP SECRET//NOFORN',...
+    'Recipients', {'INDOPACOM','NSA_AI_TASK_FORCE'});
