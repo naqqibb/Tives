@@ -44,3 +44,42 @@ sections = {
 buildReport(report_template, sections,...
     'Classification', 'TOP SECRET//NOFORN',...
     'Recipients', {'INDOPACOM','NSA_AI_TASK_FORCE'});
+
+% Load or simulate time series data representing weapon signals or geospatial temporal data
+% Example: data = load('geo_time_series.mat'); % Your spatiotemporal dataset
+
+% Prepare input and target time series data
+inputSeries = data.input;   % e.g., sensor readings, weapon signals over time
+targetSeries = data.target; % e.g., expected system response or event occurrence
+
+% Open Neural Net Time Series app
+ntstool
+
+% In the app:
+% 1. Select NARX network (good for time series with external inputs)
+% 2. Import your inputSeries and targetSeries
+% 3. Configure delays, hidden neurons, training parameters
+% 4. Train the network and validate performance
+
+% Alternatively, programmatically create and train a NARX network:
+inputDelays = 1:2;
+feedbackDelays = 1:2;
+hiddenLayerSize = 10;
+net = narxnet(inputDelays, feedbackDelays, hiddenLayerSize);
+
+% Prepare data for training
+[Xs,Xi,Ai,Ts] = preparets(net, inputSeries, targetSeries);
+
+% Train the network
+net = train(net, Xs, Ts, Xi, Ai);
+
+% Simulate / predict future values
+Y = net(Xs, Xi, Ai);
+
+% Visualize results
+plot(cell2mat(Ts), 'b')
+hold on
+plot(cell2mat(Y), 'r--')
+legend('Target','Prediction')
+title('Neuro Weapon Signal Prediction in Time Sphere')
+
