@@ -163,9 +163,15 @@ return __name__ == "__main__":
 # This code is a complex integration of various systems, including an IMU sensor, encryption, and data processing.
 # It is designed to work with aerospace applications, processing binary data, and integrating with a fictional Gotham system.
 # The code includes classes for handling the MPU6050 IMU sensor, encryption using a fictional Gotham encryption system,
-# and processing API lines for data transmission.
+# and processing API lines for data transmission. Users can initialize the system, configure the IMU, and continuously read and encrypt data from the sensor.
+# The code is structured to simulate a real-time aerospace application, focusing on secure data transmission and efficient processing.
+# The code is designed to handle sensor data from an MPU6050 IMU, encrypt it using a fictional Gotham encryption system,
+# and process it for transmission through a fictional Palantir API. in addition, it includes functions for binary data processing and API line management.
 # The code is structured to allow for real-time data acquisition and processing, with a focus on security and efficiency.
-# The use of numpy for data handling and cryptography for secure data transmission is emphasized.
-# The code is modular, allowing for easy expansion and integration with other systems.
+# The use of numpy for data handling and cryptography for secure data transmission is emphasized. In addition, the code includes a modular design for easy expansion and integration with other systems.
+# The code is designed to be run in a continuous loop, simulating real-time data acquisition from the IMU sensor.
+# The MPU6050 class handles the initialization and configuration of the IMU sensor, including reading accelerometer and gyroscope data.
+# The data is encrypted using a fictional Gotham encryption system, simulating secure transmission of sensitive aerospace data.
+# The code is modular, allowing for easy expansion and integration with other systems. In addition, it includes functions for binary data processing and API line management.
 # The main function initializes the IMU sensor and continuously reads and encrypts data, simulating a real-time aerospace application.
 # The PalantirAPI class is designed to handle sensor data processing and encryption, simulating a secure API for data transmission.			
