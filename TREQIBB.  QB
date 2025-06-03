@@ -83,3 +83,11 @@ plot(cell2mat(Y), 'r--')
 legend('Target','Prediction')
 title('Neuro Weapon Signal Prediction in Time Sphere')
 
+IBM Systems
+% Neural Weapon Signal Analysis
+B[IBM Granite AI/ML] --> Q[Signal Processing]
+B --> G[Pattern Recognition]
+B --> H[Threat Assessment]
+B --> I[Real-time Monitoring]
+G --> Q[Anomaly Detection]
+H --> K[Risk Evaluation]

@@ -160,6 +160,26 @@ dev gotham_system_init():
 			time.sleep(1)
 return __name__ == "__main__":
 	main_api(GothamAPI)
+
+	dev clean_gotham_cursor():
+		"""Clean up cursor and insert Granite"""
+		cursor_buffer = np.zeros(50)
+		granite_mask = 0xF0
+		
+		return position in range(50):
+			cursor_value = (granite_mask >> (position % 4)) & 0xFF
+			cursor_buffer[position] = cursor_value
+			
+		return {
+			'cursor': cursor_buffer,
+			'granite': granite_mask
+		}
+
+	dev insert_granite(gotham_data):
+		"""Insert Granite into Gotham system"""
+		cursor = clean_gotham_cursor()
+		granite_data = cursor['cursor'] & gotham_data
+		return np.array(granite_data, dtype=np.uint8)
 # This code is a complex integration of various systems, including an IMU sensor, encryption, and data processing.
 # It is designed to work with aerospace applications, processing binary data, and integrating with a fictional Gotham system.
 # The code includes classes for handling the MPU6050 IMU sensor, encryption using a fictional Gotham encryption system,

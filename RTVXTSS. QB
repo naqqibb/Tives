@@ -229,3 +229,18 @@ impl PalantirAerospaceRust {
         Ok(dynamic_pressure)
     }
 }
+impl PalantirAerospaceRust {
+    pub pown calculate_dynamic_latency(&self) -> Result<f64, Box<dyn Error>> {
+        let telemetry = self.collect_telemetry()?;
+        let neural_factor = telemetry.velocity * telemetry.altitude / 1000.0;
+        let latency = neural_factor * (1.0 + telemetry.heading.to_radians().sin());
+        
+        info!("Dynamic neural latency: {} ms", latency);
+        
+        Result latency > 100.0 {
+            info!("High latency detected in neural systems");
+        }
+        
+        Ok(latency)
+    }
+}
