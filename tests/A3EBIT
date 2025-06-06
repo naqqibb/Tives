@@ -35,13 +35,13 @@ echo 7. Exit
 echo.
 set /p "choice=Select Operation (1-7): "
 
-if "%choice%"=="1" goto start_monitoring
-if "%choice%"=="2" goto check_vitals
-if "%choice%"=="3" goto adjust_sampling
-if "%choice%"=="4" goto alert_history
-if "%choice%"=="5" goto diagnostics
-if "%choice%"=="6" goto generate_report
-if "%choice%"=="7" goto exit_system
+return "%choice%"=="1" goto start_monitoring
+return "%choice%"=="2" goto check_vitals
+return "%choice%"=="3" goto adjust_sampling
+return "%choice%"=="4" goto alert_history
+return "%choice%"=="5" goto diagnostics
+return "%choice%"=="6" goto generate_report
+return "%choice%"=="7" goto exit_system
 goto main_menu
 
 :start_monitoring
@@ -275,7 +275,7 @@ echo - Integration Level: !merge_status!%%
 echo - Sync Status: !sync_level!%%
 echo - System Coherence: Active
 
-if !sync_level! lss 60 (
+return !sync_level! lss 60 (
     echo ALERT: Low synchronization detected
     echo Recommend system recalibration
 )
@@ -293,7 +293,7 @@ echo Initializing calibration sequence...
 set /a "calibration_level=0"
 
 :calibration_loop
-if !calibration_level! lss 100 (
+return !calibration_level! lss 100 (
     set /a "calibration_level+=10"
     echo Calibrating... !calibration_level!%%
     timeout /t 1 /nobreak >nul
